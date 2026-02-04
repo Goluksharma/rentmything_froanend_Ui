@@ -1,16 +1,73 @@
 # ui_rentmything
 
-A new Flutter project.
+# RentMyThing Frontend (Flutter)
 
-## Getting Started
+This is the Flutter UI for the **RentMyThing** backend service.  
+It provides a mobile interface for users to register, login, manage items, and search based on location.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 📱 Features
+- OTP‑based registration flow integrated with backend
+- JWT login and secure session handling
+- Role‑based UI (Owner vs User)
+- Item listing, adding, and deletion
+- Location auto‑capture and profile management
+- Search items/users by location
+- Clean, responsive Flutter UI
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Tech Stack
+- **Framework:** Flutter (Dart)
+- **State Management:** Provider / Riverpod (depending on your setup)
+- **Networking:** `http` package (REST API calls)
+- **Backend:** RentMyThing Spring Boot server
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Install [Flutter SDK](https://docs.flutter.dev/get-started/install)
+- Android Studio or VS Code with Flutter plugin
+- Backend server running locally (`http://localhost:8080/api`)
+
+### Clone the repo
+``bash git clone https://github.com/Goluksharma/rentmything_froanend_Ui.gitcd rentmything_froanend_Ui
+Install dependencies
+bash
+flutter pub get
+Run the app
+bash
+flutter run
+
+pdate the backend API base URL in your Flutter project (usually in lib/config/api.dart or similar):
+
+dart
+const String baseUrl = "http://localhost:8080/api";
+
+📖 API Integration
+The frontend consumes the following backend endpoints:
+
+POST /sendotp → Send OTP to email
+
+POST /verifyotp → Verify OTP
+
+POST /register → Register user
+
+POST /login → Login and get JWT
+
+POST /save-location → Save GPS coordinates
+
+GET /categories → Fetch categories
+
+POST /add-service → Add item
+
+DELETE /deleteItem → Delete item
+
+POST /fetching → Fetch owner profile
+
+POST /serch → Search by location
+
+DELETE /delete-account → Delete account
