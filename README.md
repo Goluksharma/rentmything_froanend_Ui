@@ -70,10 +70,15 @@ POST /fetching → Fetch owner profile
 
 POST /serch → Search by location
 
-DELETE /delete-account → Delete account
-APP PREVIEW
+
+
+
+
+APP PREVIEW 
 <img width="371" height="804" alt="Screenshot 2026-02-04 181056" src="https://github.com/user-attachments/assets/9cdafbdd-73ce-47ca-bef3-8921c05b765b" />
+
 <img width="368" height="798" alt="Screenshot 2026-02-04 181112" src="https://github.com/user-attachments/assets/f5ef2ce9-9d2b-4510-8385-f920f1545031" />
+
 <img width="372" height="796" alt="Screenshot 2026-02-04 181125" src="https://github.com/user-attachments/assets/c6b5a221-89d7-434e-a8a8-89f2406e89fe" />
 
 
