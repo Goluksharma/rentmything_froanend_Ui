@@ -71,3 +71,5 @@ POST /fetching → Fetch owner profile
 POST /serch → Search by location
 
 DELETE /delete-account → Delete account
+<img width="371" height="804" alt="Screenshot 2026-02-04 181056" src="https://github.com/user-attachments/assets/9cdafbdd-73ce-47ca-bef3-8921c05b765b" />
+
